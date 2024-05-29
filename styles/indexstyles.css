@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Seurat;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/SeuratProB.otf) format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    background: #fff7e7;
+    font-family: Seurat;
+    color: #74664b;
+}
+
+.header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffdfa0;
+    font-size: 20px;
+}
+
+.header .title {
+    margin-left: 30px;
+}
+
+
+.header .headerButtonContainer {
+    margin-right: 30px;
+    gap: 10px;
+}
+
+.shopButton, .recipeButton {
+    background-color: transparent;
+    padding: 3px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.shopButton:hover, .recipeButton:hover {
+    background-color: #feae00; /* Background color on hover */
+}
+
+
