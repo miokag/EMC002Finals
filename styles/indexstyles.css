@@ -7,7 +7,7 @@
 
 * {
     box-sizing: border-box;
-    
+    cursor: url('../imgs/Pointer.png'), auto;
 }
 
 body{
@@ -15,6 +15,7 @@ body{
     background: #fff7e7;
     font-family: Seurat;
     color: #74664b;
+    
 }
 
 .header {
