@@ -4,84 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nook's Cranny</title>
+    <link rel="icon" type="image/x-icon" href="imgs\Apps.png">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Your custom styles -->
     <link rel="stylesheet" href="styles/indexstyles.css">
-    <!-- Your custom JavaScript -->
-    <script src="javascripts/indexjs.js"></script>
 </head>
 <body>
-    <div class="cranny-header">
+    <div class="cranny-header" id="cranny-header">
         <div class="container">
             <div class="cranny-header-content">
                 <div class="cranny-logo">
-                    <p class="cranny-title">Nook's Cranny</p>
+                    <img src="imgs\logo.png" alt="Nook's Cranny Logo" class="cranny-logo-image small-logo" style="margin-left: 10px;">
                 </div>
                 <nav class="navbar navbar-expand-sm custom-navbar">
                     <!-- Links -->
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
+                        <li class="nav-item dropdown" style="margin-right: 2rem;"> <!-- Added dropdown class -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Furniture <!-- Changed to dropdown link -->
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Outdoor</a></li>
+                                <li><a class="dropdown-item" href="#">Indoor</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 2</a>
+                        <li class="nav-item dropdown" style="margin-right: 2rem;"> <!-- Added dropdown class -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Clothes <!-- Changed to dropdown link -->
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Inner</a></li>
+                                <li><a class="dropdown-item" href="#">Outer</a></li>
+                                <li><a class="dropdown-item" href="#">Lower</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 3</a>
+                        <li class="nav-item dropdown" style="margin-right: 2rem;"> <!-- Added dropdown class -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Misc. <!-- Changed to dropdown link -->
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Recipes</a></li>
+                                <li><a class="dropdown-item" href="#">Seeds</a></li>
+                                <li><a class="dropdown-item" href="#">Tools</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
-                <div class="user-account">
-                    <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">                        <i class="bi bi-person"></i> <!-- Bootstrap person icon -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="userdropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person"></i> <!-- Bootstrap person icon -->
                     </button>
-                    <div class="dropdown-menu">
-                        <form class="px-4 py-3">
-                          <div class="form-group">
-                            <label for="exampleDropdownFormEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleDropdownFormPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                          </div>
-                          <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                            <label class="form-check-label" for="dropdownCheck">
-                              Remember me
-                            </label>
-                          </div>
-                          <button type="submit" class="btn btn-primary">Sign in</button>
-                        </form>
+                    <form class="dropdown-menu p-4">
+                        <div class="form-group">
+                          <label for="exampleDropdownFormEmail2">Email address</label>
+                          <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleDropdownFormPassword2">Password</label>
+                          <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                          <label class="form-check-label" for="dropdownCheck2">
+                            Remember me
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary custom-signin-btn">Sign in</button>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">New around here? Sign up</a>
                         <a class="dropdown-item" href="#">Forgot password?</a>
-                      </div>
+
+                      </form>
                 </div>
-                
             </div>
         </div>
     </div>
     
-    
     <!-- Indicators -->
     <!-- The slideshow -->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" >
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://www.newgamenetwork.com/images/uploads/gallery/AnimalCrossingNH/acnh_02.jpg" class="d-block w-100" alt="Los Angeles">
+                <img src="https://pbs.twimg.com/media/GKlZFlwW4AARSZX?format=jpg&name=large" class="d-block w-100" alt="Los Angeles">
             </div>
             <div class="carousel-item">
-                <img src="https://media.newyorker.com/photos/5e73b4bcace85e0008863146/master/pass/Parkin-QuarantineandAnimalCrossing2.jpg" class="d-block w-100" alt="Chicago">
+                <img src="https://pbs.twimg.com/media/GIG4b2JWoAAxiAe?format=jpg&name=large" class="d-block w-100" alt="Chicago">
             </div>
             <div class="carousel-item">
-                <img src="https://media.newyorker.com/photos/5e73b4bcace85e0008863146/master/pass/Parkin-QuarantineandAnimalCrossing2.jpg" class="d-block w-100" alt="New York">
+                <img src="https://pbs.twimg.com/media/F55_GbuaUAAdPic?format=jpg&name=large" class="d-block w-100" alt="New York">
             </div>
         </div>
         <!-- Left and right controls -->
@@ -94,5 +116,81 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <br><br>
+    <section class="game-section">
+        <h2 class="line-title">Trending Clothes</h2>
+        <div class="owl-carousel custom-carousel owl-theme">
+          <div class="item active" style="background-image: url(https://mypotatogames.com/wp-content/uploads/2020/08/118450800_3186373341398882_5818486742481476336_o-1024x576.jpg);">
+            
+            <div class="item-desc">
+                <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(https://pbs.twimg.com/media/FDccllqWYAIX0ow?format=jpg&name=large);">
+            <div class="item-desc">
+                <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(https://www.mtmmo.com/upload/20210204/6374805120791487145547384.png);">
+            <div class="item-desc">
+                <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(https://s3.amazonaws.com/prod-media.gameinformer.com/styles/body_default/s3/2020/04/01/cf8964eb/mo-jhjt-mb87-w51j.jpg);">
+            <div class="item-desc">
+                <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(https://i.pinimg.com/736x/af/b8/6e/afb86ed17fcfdc286c1b7932e834900a.jpg);">
+            <div class="item-desc">
+                <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(https://content-resized.nookea.com/s1024/TqZP3_4exBmEUIqy6heP3);">
+            <div class="item-desc">
+                <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="game-section">
+        <h2 class="line-title">Trending Furniture</h2>
+        <div class="owl-carousel custom-carousel owl-theme">
+          <div class="item active" style="background-image: url(https://i.pinimg.com/originals/f6/93/fc/f693fccf96f4da6c0ff50b8e3558724b.jpg);">
+            <div class="item-desc">
+                <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(https://i.redd.it/q71mcpvoqqr41.png);">
+            <div class="item-desc">
+                <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(https://assetsio.gnwcdn.com/k1_0tplgLC.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp);">
+            <div class="item-desc">
+                <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(https://s3.amazonaws.com/prod-media.gameinformer.com/styles/body_default/s3/2020/04/01/cf8964eb/mo-jhjt-mb87-w51j.jpg);">
+            <div class="item-desc">
+                <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(https://i.pinimg.com/736x/af/b8/6e/afb86ed17fcfdc286c1b7932e834900a.jpg);">
+            <div class="item-desc">
+                <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(https://content-resized.nookea.com/s1024/TqZP3_4exBmEUIqy6heP3);">
+            <div class="item-desc">
+                <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
 </body>
+<!-- Your custom JavaScript -->
+<script src="javascripts/indexjs.js"></script>
 </html>
