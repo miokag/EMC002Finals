@@ -3,10 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nook's Cranny</title>
+    <link rel="icon" type="image/x-icon" href="imgs\Apps.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="../../styles/aboutstyles.css">
 </head>
 <body>
-    <p>tests</p>
-    <a href="../index.html">test</a>
+    <div class="cranny-header" id="cranny-header">
+        <div class="container">
+            <div class="cranny-header-content">
+                <div class="cranny-logo">
+                    <a href="../../index.html">
+                        <img src="../../imgs/logo.png" alt="Nook's Cranny Logo" class="cranny-logo-image small-logo" style="margin-left: 10px;">
+                      </a>
+                </div>
+                <nav class="navbar navbar-expand-sm custom-navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" style="margin-right: 2rem;"> 
+                          <a class="nav-link" href="../../pages/aboutus.html"  role="button" aria-expanded="false">
+                              About Us 
+                          </a>
+                      </li>
+                        <li class="nav-item dropdown" style="margin-right: 2rem;"> 
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Furniture 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../../pages/furniture/outdoor.html">Outdoor</a></li>
+                                <li><a class="dropdown-item" href="../../pages/furniture/indoor.html">Indoor</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" style="margin-right: 2rem;"> 
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Clothes 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../../pages/clothes/inner.html">Inner</a></li>
+                                <li><a class="dropdown-item" href="../../pages/clothes/outer.html">Outer</a></li>
+                                <li><a class="dropdown-item" href="../../pages/clothes/lower.html">Lower</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" style="margin-right: 2rem;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Misc. 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../../pages/misc/recipes.html">Recipes</a></li>
+                                <li><a class="dropdown-item" href="../../pages/misc/seeds.html">Seeds</a></li>
+                                <li><a class="dropdown-item" href="../../pages/misc/tools.html">Tools</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn btn-secondary" type="button" id="usercart" aria-expanded="false">
+                  <a href="../../pages/user/cart.html">
+                    <i class="bi bi-cart"></i>
+                  </a>
+              </button>
+                <div class="dropdown user-toggle">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="userdropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-person"></i>
+                  </button>
+                  <form class="dropdown-menu p-4 dropdown-menu-end" aria-labelledby="userdropdownMenuButton">
+                      <div class="form-group">
+                        <label for="exampleDropdownFormEmail2">Email address</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleDropdownFormPassword2">Password</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                        <label class="form-check-label" for="dropdownCheck2">
+                          Remember me
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary custom-signin-btn ">Sign in</button>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="../../pages/user/signup.html">New around here? Sign up</a>
+                      <a class="dropdown-item" href="../../pages/user/forgotpass.html">Forgot password?</a>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="section_all" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title_all text-center">
+                        <h3 class="font-weight-bold">Welcome To <span class="text-custom">Nook's Cranny!</span></h3>
+                        <p class="section_subtitle mx-auto text-muted">Nook's Cranny is a store where the player can go to buy things like furniture, tools, and their native fruit.</p>
+                        <div class="">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row vertical_content_manage mt-5">
+                <div class="col-lg-6">
+                    <div class="about_header_main mt-3">
+                        <div class="about_icon_box">
+                            <p class="text_custom font-weight-bold">Nook Cranny's History</p>
+                        </div>
+                        <h4 class="about_heading text-capitalize font-weight-bold mt-4">Nook's Cranny (Japanese: タヌキ商店, Tanuki Shop)</h4>
+                        <p class="text-muted mt-3">Nook's Cranny is the first incarnation of Tom Nook's Store in most mainstream Animal Crossing games except Animal Crossing: New Leaf, where it is replaced by Nookling Junction.</p>
+
+                        <p class="text-muted mt-3"> Nook's Cranny returns in New Horizons, but with some significant differences: it is operated by Timmy and Tommy, its inventory is larger, upgraded versions of the store are also named "Nook's Cranny", and a convenient shipping box outside the store is available at all times to sell items for a reduced value.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img_about mt-3">
+                        <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="" class="img-fluid mx-auto d-block">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-4">
+                    <div class="about_content_box_all mt-3">
+                        <div class="about_detail text-center">
+                            <div class="about_icon">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                            <h5 class="text-dark text-capitalize mt-3 font-weight-bold">Creative Design</h5>
+                            <p class="edu_desc mt-3 mb-0 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="about_content_box_all mt-3">
+                        <div class="about_detail text-center">
+                            <div class="about_icon">
+                                <i class="fab fa-angellist"></i>
+                            </div>
+                            <h5 class="text-dark text-capitalize mt-3 font-weight-bold">We make Best Result</h5>
+                            <p class="edu_desc mb-0 mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="about_content_box_all mt-3">
+                        <div class="about_detail text-center">
+                            <div class="about_icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <h5 class="text-dark text-capitalize mt-3 font-weight-bold">best platform </h5>
+                            <p class="edu_desc mb-0 mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Nook's Cranny</h5>
+                    <p>Your one-stop shop for all your Animal Crossing needs!</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: support@nookscranny.com</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Address: 123 Animal Crossing St, Gameville</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Nook's Cranny. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
