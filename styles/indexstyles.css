@@ -61,6 +61,10 @@ body {
     font-size: 1.5rem; 
 }
 
+.bi-cart{
+  color: #81350A;
+}
+
 #userdropdownMenuButton {
     background-color: transparent;
     border: none;
