@@ -22,7 +22,8 @@ body {
     background: #ffdfa0;
     font-size: 20px;
     z-index: 1000;
-    position: sticky;
+    position: fixed;
+    width: 100%;
 }
 
 .cranny-header-content {
