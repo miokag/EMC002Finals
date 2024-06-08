@@ -42,6 +42,10 @@ body {
     color: #81350A;
 }
 
+.normal-button{
+  border: 0px;
+}
+
 .custom-navbar .nav-link:hover {
     color: #000000;
 }
@@ -52,15 +56,21 @@ body {
     min-width: 100px; /* Set a minimum width */
 }
 
-/* Custom styles for the person icon */
 .btn .bi {
-    font-size: 1.5rem; /* Adjust the size of the icon */
+    font-size: 1.5rem; 
 }
 
 #userdropdownMenuButton {
     background-color: transparent;
     border: none;
     color: #000000;
+}
+
+#usercart {
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  padding-left: 30%;
 }
 
 .carousel-inner img {

@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Seurat;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/SeuratProB.otf) format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+    cursor: url('../imgs/Pointer.png'), auto;
+    font-family: Seurat;
+}
+
+body {
+    margin: 0;
+    background: #fff7e7;
+    color: #74664b;
+}
+
+.cranny-header {
+    padding: 10px;
+    background: #ffdfa0;
+    font-size: 20px;
+    z-index: 1000;
+    position: sticky;
+}
+
+.cranny-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cranny-logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0; /* Adjust padding as needed */
+}
+
+.custom-navbar .nav-link {
+    color: #81350A;
+}
+
+.normal-button{
+  border: 0px;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #000000;
+}
+
+.dropdown-menu {
+    right: 0;
+    width: auto; /* Adjust width as needed */
+    min-width: 100px; /* Set a minimum width */
+}
+
+.btn .bi {
+    font-size: 1.5rem; 
+}
+
+#userdropdownMenuButton {
+    background-color: transparent;
+    border: none;
+    color: #000000;
+}
+
+#usercart {
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  padding-left: 30%;
+}
+
+.small-logo {
+    width: 9rem;
+    height: auto;
+}
